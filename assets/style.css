@@ -225,6 +225,7 @@ p {
     display: flex;
     margin-left: 5%;
     width: 85%;
+    margin-bottom: 3%;
   }
   .imgArticle {
     order: 1;
