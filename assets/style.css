@@ -71,7 +71,7 @@ article {
   display: flex;
   flex-direction: column;
   border: 10px 20px;
-  background-color: rgb(255 218 169 / 41%);
+  background-color: rgb(255 236 211);
   padding: 10px;
 }
 body {
@@ -126,12 +126,107 @@ p {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width=576px) {
+@media screen and (min-width: 576px) {
   .father {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
   }
-  nav {
+  .child {
+    height: 3rem;
+    width: 5rem;
+    font-size: 14px;
+    margin-right: 2px;
+  }
+  #first {
+    width: 6rem;
+    height: 4rem;
+    font-size: 15px;
+    order: 2;
+  }
+  .wrap {
+    order: 1;
+  }
+  .wrap2 {
+    order: 2;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 45%;
+  }
+  article {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
     flex-direction: row;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .father {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 3%;
+  }
+  article {
+    width: 80%;
+  }
+  .child {
+    width: 6rem;
+    height: 4rem;
+    font-size: 15px;
+    order: 1;
+    margin: 5px;
+  }
+  .wrap {
+    order: 2;
+  }
+  .wrap2 {
+    order: 3;
+  }
+  .firstPart {
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .card {
+    margin-right: 10px;
+  }
+  .art {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  article {
+    display: flex;
+  }
+  .imgArticle {
+    order: 1;
+    width: 30%;
+    margin-right: 10px;
   }
 }
